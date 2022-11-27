@@ -37,7 +37,7 @@ const navbar = () => {
                 <Link
                     href="/"
                     
-                    className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className=" hover:underline underline-offset-8 text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Home
                   </Link>
@@ -45,7 +45,7 @@ const navbar = () => {
                   <Links
                     href="#"
                     activeClass="active" to="services" spy={true} smooth={true} offset={0} duration={500}
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-300 hover:underline underline-offset-8 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Services
                   </Links>
@@ -53,7 +53,7 @@ const navbar = () => {
                   <Links
                     href="#"
                     activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500}
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-300 hover:underline underline-offset-8 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Abouts
                   </Links>
@@ -61,7 +61,7 @@ const navbar = () => {
                   <Links
                     href="#"
                     activeClass="active" to="contacts" spy={true} smooth={true} offset={0} duration={500}
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-300 hover:underline underline-offset-8 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     
                     Contacts
