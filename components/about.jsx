@@ -26,7 +26,7 @@ const about = () => {
     }});
   })
   return (
-    <div className='flex justify-around snap-y snap-mandatory max-sm:flex-col max-md: flex-wrap' id='about'>
+    <div className='flex justify-around snap-y my-10 snap-mandatory max-sm:flex-col max-md: flex-wrap' id='about'>
         <div className='text-center flex flex-col items-center snap-start'>
             <h1 ref={title} className='text-3xl py-5'>ABOUT US</h1>
             <div ref={description} className='max-w-lg text-justify max-sm:w-11/12 max-md:w-full '>

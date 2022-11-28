@@ -95,7 +95,7 @@ const contacts = () => {
 
   return (
     
-    <div ref={contacts} className='bg-slate-900 pt-10 pb-5' id='contacts'>
+    <div ref={contacts} className='bg-slate-900 pt-10 pb-5 my-10' id='contacts'>
       <div className='flex justify-center items-center mx-3 mb-6 max-sm:flex-col lg:flex-row max-md: flex-col'>
         <div className='flex flex-col gap-5 text-center'>
           <h1 className='text-white text-5xl max-sm:text-center'>CONNECT WITH US</h1>

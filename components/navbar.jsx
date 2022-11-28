@@ -11,7 +11,7 @@ const navbar = () => {
   let ease = Power3.easeInOut();
   let logo = useRef(null);
   useEffect(()=>{
-    tl.to(logo, {opacity: 1, x: 10, ease: ease});
+    gsap.fromTo(logo, {opacity: 0, x:-50}, {opacity: 1, x:0, ease: ease})
   }, [])
 
   const [isOpen, setIsOpen] = useState(false);
@@ -23,14 +23,11 @@ const navbar = () => {
           <div className="flex items-center justify-around h-16 max-sm:justify-between max-md:justify-between">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <h1 ref={el => logo = el}
-                  className=" opacity-0 text-white text-3xl h-8 w-full"
+                <Link href="/"><img ref={el => logo = el} src='/images/logo.png'
+                  className="opacity-0 h-12 w-full"
                   
                   alt="Workflow"
-                >
-                  Guzman <b>Septic</b>
-                  
-                </h1>
+                /></Link>
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex justify-center items-center space-x-4">
