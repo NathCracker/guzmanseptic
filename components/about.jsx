@@ -27,7 +27,7 @@ const about = () => {
     }});
   })
   return (
-    <div className='font-custom flex justify-around snap-y my-10 snap-mandatory max-sm:flex-col max-md: flex-wrap' id='about'>
+    <div className=' bg-gradient-to-br from-gray-100 to-white font-custom flex justify-around snap-y  snap-mandatory max-sm:flex-col max-md: flex-wrap' id='about'>
         <div className='text-center flex flex-col items-center snap-start max-sm:mb-10'>
             <h1 ref={title} className='text-3xl py-5 font-lobster'>About us</h1>
             <div ref={description} className='max-w-lg text-justify max-sm:w-11/12 max-md:w-full '>

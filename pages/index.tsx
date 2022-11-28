@@ -4,13 +4,14 @@ import Services from '../components/services'
 import Contacts from '../components/contacts'
 import { ToastContainer } from 'react-toastify'
 export default function Home(){
+
   return(
     <>
     <Header />
     <Services />
     <About />
     <Contacts />
-    <ToastContainer/>
+    <ToastContainer toastClassName='bg-slate-800' bodyClassName='bg-slate-800' />
     </>
   )
 }
