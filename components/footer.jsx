@@ -10,7 +10,7 @@ const footer = () => {
       </div>
       <div className='flex justify-center items-center w-full max-sm:w-full max-sm:pb-5'>
       <input className='appearance-none block py-1 rounded-sm w-full focus:outline focus:border border-teal-500' type="text" name="" id="" />
-      <button className='max-sm:text-xs max-sm:py-2 appearance-none block py-1 border border-slate-900 rounded-sm w-1/2 text-white bg-slate-900 transition-all hover:bg-transparent duration-100 max-sm:w-1/2' type="submit">Sign up</button>
+      <button className=' max-sm:text-xs max-sm:py-2 appearance-none block py-1 border border-slate-900 rounded-sm w-1/2 text-white bg-slate-900 transition-all hover:bg-transparent duration-100 max-sm:w-1/2' type="submit">Sign up</button>
       </div>
     </div>
     <div className='flex justify-center items-center flex-col gap-5'>

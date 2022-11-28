@@ -1,8 +1,20 @@
-import React, {useRef, useState} from 'react';
+import React, {useRef, useState, useEffect} from 'react';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 const contacts = () => {
+  //Scroll animation
+  const contacts = useRef(null);
+
+  useEffect(() =>{
+    const el = contacts.current;
+    gsap.fromTo(el, {y:50, opacity: 0}, {y: 0, opacity: 1, duration: 1, scrollTrigger:{
+      trigger: el
+    }})
+  }, [])
 
   //input validation
   const [name, setName] = useState('');
@@ -44,7 +56,7 @@ const contacts = () => {
         progress: undefined,
         theme: "dark",
     });
-      const requirementsName = () => toast.error('Invalid name. Please try again!', {
+      const requirementsInvalid = (where) => toast.error('Invalid ' + where +'. Please try again!', {
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
@@ -53,52 +65,22 @@ const contacts = () => {
         draggable: true,
         progress: undefined,
         theme: "dark",
-    });
-      const requirementsEmail = () => toast.error('Invalid email. Please try again!', {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "dark",
-    });
-    const requirementsPhone = () => toast.error('Invalid phone number. Please try again!', {
-      position: "top-right",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-    });
-    const requirementsMessage = () => toast.error('Invalid message. Please try again!', {
-      position: "top-right",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
     });
 
     e.preventDefault();
     if (name.length == 0 && email.length == 0 && phoneNumber.length == 0 && message.length == 0 ){
       requirements();
     } else if(name.length == 0){
-      requirementsName();
+      requirementsInvalid('name');
     }
     else if(email.length == 0){
-      requirementsEmail();
+      requirementsInvalid('email address');
     }
     else if(phoneNumber.length == 0){
-      requirementsPhone();
+      requirementsInvalid('phone number');
     }
     else if(message.length == 0){
-      requirementsMessage();
+      requirementsInvalid('message');
     }else {
       emailjs.sendForm('service_h53hsbv', 'template_2wsgejr', form.current, '55VfGu7c3pQDEh_no')
       .then((result) => {
@@ -112,7 +94,7 @@ const contacts = () => {
   };
 
   return (
-    <div className='bg-slate-900 pt-10 pb-5' id='contacts'>
+    <div ref={contacts} className='bg-slate-900 pt-10 pb-5' id='contacts'>
       <div className='flex justify-center items-center mx-3 mb-6 max-sm:flex-col lg:flex-row max-md: flex-col'>
         <div className='flex flex-col gap-5 text-center'>
           <h1 className='text-white text-5xl max-sm:text-center'>CONNECT WITH US</h1>

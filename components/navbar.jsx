@@ -37,7 +37,7 @@ const navbar = () => {
                 <Link
                     href="/"
                     
-                    className=" hover:underline underline-offset-8 text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className=" hover:underline underline-offset-8 text-gray-300 px-3 py-2 rounded-md text-sm font-medium hover:text-white"
                   >
                     Home
                   </Link>
