@@ -1,8 +1,10 @@
 import React from 'react'
 import {BsFacebook, BsInstagram} from 'react-icons/bs'
+import ScrollToTop from 'react-scroll-to-top'
 const footer = () => {
   return (
-<div className='flex flex-col bg-slate-800'>
+<div className='flex flex-col bg-slate-800 text-center'>
+
   <div className='flex justify-around items-center bg-slate-800 min-w-full w-full pt-16 pb-3 max-sm:flex-col max-sm:w-full'>
     <div className='flex flex-col justify-center gap-5 items-center w-2/6'>
       <div className=' flex justify-center items-center text-center w-full max-sm:w-full'>
@@ -25,8 +27,8 @@ const footer = () => {
   <div className='text-center'>
     <p className=' text-white text-lg pb-5'>© 2022 Guzman Septic™ is a registered trademark. All Rights Reserved.</p>
   </div>
+  <ScrollToTop smooth top='20' color="#282c34" width='40'/>
 </div>
-
 
   )
 }
