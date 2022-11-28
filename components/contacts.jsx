@@ -95,10 +95,10 @@ const contacts = () => {
 
   return (
     
-    <div ref={contacts} className='bg-slate-900 pt-10 pb-5 my-10' id='contacts'>
+    <div ref={contacts} className='bg-slate-900 pt-10 pb-5 mt-10 font-custom' id='contacts'>
       <div className='flex justify-center items-center mx-3 mb-6 max-sm:flex-col lg:flex-row max-md: flex-col'>
         <div className='flex flex-col gap-5 text-center'>
-          <h1 className='text-white text-5xl max-sm:text-center'>CONNECT WITH US</h1>
+          <h1 className='text-white text-5xl max-sm:text-center font-lobster'>Connect with us</h1>
           <p className='text-white lg:pb-10 max-lg:pb-10 max-sm:pb-10 max-md:pb-10 max-sm:text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, sit.</p>
         </div>
         <form ref={form} onSubmit={sendEmail} action="" className=' flex justify-center items-center flex-col gap-5 px-4 my-auto w-[50%] max-w-full mx-auto max-sm:w-full max-md:w-full max-lg:w-full'>

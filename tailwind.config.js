@@ -1,3 +1,5 @@
+const { SERVER_FILES_MANIFEST } = require('next/dist/shared/lib/constants')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -8,10 +10,14 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'guzmans-bg': "url('../img/guzmansepticbackground.jpg')",
+        'guzmans-bg': "url('/images/guzmansepticbackground.jpg')",
         'septic-cleaning': "url('../img/SepticCleaning.jpg')",
       }
     },
+    fontFamily:{
+      'custom': ['Nunito', 'sans-serif'],
+      'lobster': ['Lobster', 'cursive']
+    }
   },
   plugins: [],
 }

@@ -6,7 +6,7 @@ const footer = () => {
   <div className='flex justify-around items-center bg-slate-800 min-w-full w-full pt-16 pb-3 max-sm:flex-col max-sm:w-full'>
     <div className='flex flex-col justify-center gap-5 items-center w-2/6'>
       <div className=' flex justify-center items-center text-center w-full max-sm:w-full'>
-        <h1 className='text-white text-2xl'>Sign up to our Newsletter</h1>
+        <h1 className='text-white text-2xl font-lobster'>Sign up to our Newsletter</h1>
       </div>
       <div className='flex justify-center items-center w-full max-sm:w-full max-sm:pb-5'>
       <input className='appearance-none block py-1 rounded-sm w-full focus:outline focus:border border-teal-500' type="text" name="" id="" />
@@ -14,7 +14,7 @@ const footer = () => {
       </div>
     </div>
     <div className='flex justify-center items-center flex-col gap-5'>
-      <h1 className=' text-white text-2xl'>Follow our Social Media</h1>
+      <h1 className=' text-white text-2xl font-lobster'>Follow our Social Media</h1>
       <div className='flex flex-row gap-10'>
         <a href="https://www.facebook.com/Guzmanseptic/" target='_blank'><BsFacebook className='text-white text-3xl' /></a>  
         <a href="https://www.instagram.com/guzmansepticservices/?hl=en" target='_blank'><BsInstagram className='text-white text-3xl' /></a>
