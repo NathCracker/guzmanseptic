@@ -51,7 +51,7 @@ const contacts = () => {
         autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
-        pauseOnHover: true,
+        pauseOnHover: false,
         draggable: true,
         progress: undefined,
         theme: "dark",
@@ -61,7 +61,7 @@ const contacts = () => {
         autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
-        pauseOnHover: true,
+        pauseOnHover: false,
         draggable: true,
         progress: undefined,
         theme: "dark",
@@ -94,6 +94,7 @@ const contacts = () => {
   };
 
   return (
+    
     <div ref={contacts} className='bg-slate-900 pt-10 pb-5' id='contacts'>
       <div className='flex justify-center items-center mx-3 mb-6 max-sm:flex-col lg:flex-row max-md: flex-col'>
         <div className='flex flex-col gap-5 text-center'>
@@ -119,7 +120,6 @@ const contacts = () => {
             <textarea onChange={e=>setMessage(e.target.value)} rows="4" className='appearance-none block resize-none rounded-sm w-full focus:outline focus:border border-teal-500' cols="4" type="text" name="message" id="message" ></textarea>
           </div>
             <input type="submit"  value='Send' className='text-white bg-slate-800 px-4 py-2 cursor-pointer rounded-sm transition-all hover:scale-105 duration-300 hover:shadow-md' />  
-            <ToastContainer/>
         </form>
       </div>
     </div>
