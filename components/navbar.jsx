@@ -23,7 +23,7 @@ const navbar = () => {
           <div className="flex items-center justify-around h-16 max-sm:justify-between max-md:justify-between">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <Link href="/"><img ref={el => logo = el} src='/images/logo.png'
+                <Link href="/"><img ref={el => logo = el} src='/images/logolight.png'
                   className="opacity-0 h-12 w-full"
                   
                   alt="Workflow"
