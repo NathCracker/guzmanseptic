@@ -1,7 +1,7 @@
 export default[
     {
         url: '/images/cleaning.jpg',
-        title: 'Cleaning and Repair',
+        title: 'Cleaning and Pumping',
         description: 'We offer the best septic cleaning service in all of houstom',
         link: '/services/cleaning' 
     },
@@ -31,7 +31,7 @@ export default[
     },
     {
         url: '/images/image5.jpg',
-        title: 'Septic Tank Pumping',
+        title: 'Septic Tank Repair',
         description: 'We offer the best septic cleaning service in all of houstom',
         link: '/services/pumping'  
     }

@@ -12,7 +12,7 @@ const slider = () => {
     const el = slideria.current;
     gsap.fromTo(el, {y:100, opacity:0}, {y:0, opacity:1, delay:0.2, scrollTrigger:{
       trigger: el
-    }})
+    }});
   })
   return (
     <div className='flex flex-col items-center lg:hidden'>

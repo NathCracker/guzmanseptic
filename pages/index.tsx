@@ -11,7 +11,7 @@ export default function Home(){
     <Services />
     <About />
     <Contacts />
-    <ToastContainer toastClassName='bg-slate-800' bodyClassName='bg-slate-800' />
+    <ToastContainer />
     </>
   )
 }

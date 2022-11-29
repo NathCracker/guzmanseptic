@@ -117,7 +117,7 @@ const contacts = () => {
           </div>
           <div className='flex gap-1 flex-col justify-start w-full'>
             <label htmlFor="message" className='text-black'>Message</label>
-            <textarea onChange={e=>setMessage(e.target.value)} rows="4" className='appearance-none border border-slate-900 block resize-none rounded-sm w-full focus:outline focus:border focus:border-teal-500' cols="4" type="text" name="message" id="message" ></textarea>
+            <textarea onChange={e=>setMessage(e.target.value)} rows="4" className='appearance-none border border-slate-900 block rounded-sm w-full focus:outline focus:border min-h-[150px] max-h-[300px] focus:border-teal-500 resize-y' cols="4" type="text" name="message" id="message" ></textarea>
           </div>
             <input type="submit"  value='Send' className='text-white bg-slate-800 px-4 py-2 cursor-pointer rounded-sm transition-all hover:scale-105 duration-300 hover:shadow-md' />  
         </form>

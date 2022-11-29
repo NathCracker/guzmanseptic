@@ -31,10 +31,7 @@ const about = () => {
         <div className='text-center flex flex-col items-center snap-start max-sm:mb-10'>
             <h1 ref={title} className='text-3xl py-5 font-lobster'>About us</h1>
             <div ref={description} className='max-w-lg text-justify max-sm:w-11/12 max-md:w-full '>
-                <p className='my-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex dicta rem quo eveniet sequi officiis. Asperiores laboriosam enim eveniet magnam? Tempora, molestias officia? Aspernatur officiis quas deleniti quo expedita minima?</p>
-                <p className='my-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex dicta rem quo eveniet sequi officiis. Asperiores laboriosam enim eveniet magnam? Tempora, molestias officia? Aspernatur officiis quas deleniti quo expedita minima?</p>
-                <p className='my-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex dicta rem quo eveniet sequi officiis. Asperiores laboriosam enim eveniet magnam? Tempora, molestias officia? Aspernatur officiis quas deleniti quo expedita minima?</p>
-                <p className='my-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex dicta rem quo eveniet sequi officiis. Asperiores laboriosam enim eveniet magnam? Tempora, molestias officia? Aspernatur officiis quas deleniti quo expedita minima?</p>
+                <p className='my-2'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem sint soluta, laboriosam voluptatibus eligendi quaerat explicabo modi repellat animi pariatur sapiente quod doloremque, fugiat in ex? Amet eos, in dolor quisquam blanditiis incidunt veritatis reiciendis iusto doloribus consequuntur, unde, quaerat necessitatibus voluptatum! Dolor eos quas, quos quaerat illum neque sint.</p>
             </div>
         </div>
         <div  ref={map} className=' flex flex-col justify-center max-sm:text-center max-w-[600px] max-h-[600px] max-sm:w-full max-md:w-full max-lg:w-[600px]'>
