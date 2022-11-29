@@ -29,7 +29,6 @@ const footer = () => {
   </div>
   <ScrollToTop smooth top='20' color="#FFFFFF" width='40' className='!bg-slate-900 toUp transition-all hover:rotate-[360deg] duration-700' />
 </div>
-
   )
 }
 
