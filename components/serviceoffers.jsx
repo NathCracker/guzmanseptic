@@ -1,13 +1,13 @@
 export default[
     {
         url: '/images/cleaning.jpg',
-        title: 'Septic Cleaning',
+        title: 'Cleaning and Repair',
         description: 'We offer the best septic cleaning service in all of houstom',
         link: '/services/cleaning' 
     },
     {
         url: '/images/installation.jpg',
-        title: 'Installation and Repair',
+        title: 'Installation',
         description: 'We offer the best septic cleaning service in all of houstom',
         link: '/services/installation' 
     },
@@ -21,18 +21,18 @@ export default[
         url: '/images/image6.jpg',
         title: 'Grease Traps',
         description: 'We offer the best grease traps services in all of houston texas',
-        link: '/services/controlpanels'  
+        link: '/services/greasetraps'  
     },
     {
         url: '/images/image5.jpg',
         title: 'High Pressure Jetting',
         description: 'We offer the best septic cleaning service in all of houstom',
-        link: '/services/controlpanels'  
+        link: '/services/highpressurejetting'  
     },
     {
         url: '/images/image5.jpg',
         title: 'Septic Tank Pumping',
         description: 'We offer the best septic cleaning service in all of houstom',
-        link: '/services/controlpanels'  
+        link: '/services/pumping'  
     }
 ]   
