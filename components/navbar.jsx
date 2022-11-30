@@ -45,7 +45,7 @@ const navbar = () => {
 
                   <Links
                     href="#"
-                    activeClass="active" to="services" spy={true} smooth={true} offset={0} duration={500}
+                    activeClass="active" to="services" spy={true} smooth={true} offset={-50} duration={500}
                     className="linking text-gray-300 hover:underline underline-offset-8 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Services
@@ -53,7 +53,7 @@ const navbar = () => {
 
                   <Links
                     href="#"
-                    activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500}
+                    activeClass="active" to="about" spy={true} smooth={true} offset={-50} duration={500}
                     className="linking text-gray-300 hover:underline underline-offset-8 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Abouts
@@ -61,7 +61,7 @@ const navbar = () => {
 
                   <Links
                     href="#"
-                    activeClass="active" to="contacts" spy={true} smooth={true} offset={0} duration={500}
+                    activeClass="active" to="contacts" spy={true} smooth={true} offset={-50} duration={500}
                     className="linking text-gray-300 hover:underline underline-offset-8 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     
@@ -139,7 +139,7 @@ const navbar = () => {
 
                 <Links
                   href="#"
-                  activeClass="active" to="services" spy={true} smooth={true} offset={0} duration={500}
+                  activeClass="active" to="services" spy={true} smooth={true} offset={-50} duration={500}
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Services
@@ -147,7 +147,7 @@ const navbar = () => {
 
                 <Links
                   href="#"
-                  activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500}
+                  activeClass="active" to="about" spy={true} smooth={true} offset={-50} duration={500}
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   About
@@ -155,7 +155,7 @@ const navbar = () => {
 
                 <Links
                   href="#"
-                  activeClass="active" to="contacts" spy={true} smooth={true} offset={0} duration={500}
+                  activeClass="active" to="contacts" spy={true} smooth={true} offset={-50} duration={500}
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Contacts
