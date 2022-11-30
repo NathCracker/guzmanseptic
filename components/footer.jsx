@@ -23,11 +23,11 @@ const footer = () => {
       </div>
     </div>
   </div>
-  <hr class="my-4 mx-auto w-10/12 h-1 bg-gray-100 rounded border-0 md:my-10"></hr>
+  <hr className="my-4 mx-auto w-10/12 h-1 bg-gray-100 rounded border-0 md:my-10"></hr>
   <div className='text-center'>
     <p className=' text-white text-lg pb-5'>© 2022 Guzman Septic™ is a registered trademark. All Rights Reserved.</p>
   </div>
-  <ScrollToTop smooth top='20' color="#FFFFFF" width='40' className='!bg-slate-900 toUp transition-all hover:rotate-[360deg] duration-700' />
+  <ScrollToTop smooth top='20' color="#FFFFFF" width='40' className='!bg-slate-900 toUp transition-all rounded-full hover:rotate-[360deg] duration-700' />
 </div>
   )
 }
