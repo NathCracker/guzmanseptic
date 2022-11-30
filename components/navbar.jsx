@@ -7,17 +7,21 @@ import { useAutoAnimate } from '@formkit/auto-animate/react'
 import {gsap, Power3} from 'gsap'
 
 const navbar = () => {
-  let tl = new gsap.timeline();
   let ease = Power3.easeInOut();
   let logo = useRef(null);
-  useEffect(()=>{
-    gsap.fromTo(logo, {opacity: 0, x:-50}, {opacity: 1, x:0, ease: ease})
+
+  useEffect(()=>{  
+  const navs = gsap.utils.toArray('.linking');
+  navs.forEach(nav => {
+    gsap.fromTo(nav, { opacity:0, scale: 0.5}, {scale: 1, opacity: 1, duration: 1, ease: ease})
+    })
+    gsap.fromTo(logo, {opacity: 0, scale:0.5}, {opacity: 1, scale:1, ease: ease, duration: 1})
   }, [])
 
   const [isOpen, setIsOpen] = useState(false);
   const [animationParent] = useAutoAnimate();
   return (
-    <div ref={animationParent}>
+    <div ref={animationParent} className='z-10 sticky top-0'>
       <nav className="bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-around h-16 max-sm:justify-between max-md:justify-between">
@@ -34,7 +38,7 @@ const navbar = () => {
                 <Link
                     href="/"
                     
-                    className=" hover:underline underline-offset-8 text-gray-300 px-3 py-2 rounded-md text-sm font-medium hover:text-white"
+                    className="linking hover:underline underline-offset-8 text-gray-300 px-3 py-2 rounded-md text-sm font-medium hover:text-white"
                   >
                     Home
                   </Link>
@@ -42,7 +46,7 @@ const navbar = () => {
                   <Links
                     href="#"
                     activeClass="active" to="services" spy={true} smooth={true} offset={0} duration={500}
-                    className="text-gray-300 hover:underline underline-offset-8 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="linking text-gray-300 hover:underline underline-offset-8 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Services
                   </Links>
@@ -50,7 +54,7 @@ const navbar = () => {
                   <Links
                     href="#"
                     activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500}
-                    className="text-gray-300 hover:underline underline-offset-8 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="linking text-gray-300 hover:underline underline-offset-8 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Abouts
                   </Links>
@@ -58,7 +62,7 @@ const navbar = () => {
                   <Links
                     href="#"
                     activeClass="active" to="contacts" spy={true} smooth={true} offset={0} duration={500}
-                    className="text-gray-300 hover:underline underline-offset-8 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="linking text-gray-300 hover:underline underline-offset-8 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     
                     Contacts
