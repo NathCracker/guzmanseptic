@@ -13,6 +13,12 @@ const about = () => {
     const el2 = description.current;
     const el3 = map.current;
     const el4 = location.current;
+    gsap.utils.toArray('.offer').forEach(offers =>{
+      gsap.fromTo(offers, {x:-100, opacity:0}, {x:0, opacity: 1, scrollTrigger:{
+        trigger:offers,
+        delay: ScrollTrigger.isInViewport(offers) ? 1 : 0,
+      }})
+    })
     gsap.fromTo(el, {x: -100, opacity:0}, {x:0, opacity: 1, scrollTrigger:{
       trigger: el
     }});
@@ -28,8 +34,22 @@ const about = () => {
   })
   return (
     <div className=' bg-gradient-to-br from-gray-100 to-white font-custom flex justify-around snap-y  snap-mandatory max-sm:flex-col max-md: flex-wrap' id='about'>
-        <div className='text-center flex flex-col items-center snap-start max-sm:mb-10'>
+        <div className='text-center flex flex-col items-center snap-start max-sm:mb-10 gap-10'>
             <h1 ref={title} className='text-3xl py-5 font-lobster'>About us</h1>
+            <div className='flex flex-row justify-between items-center gap-16'>
+              <div className='offer'>
+                {/*<a href="https://www.flaticon.com/free-icons/residential" title="residential icons">Residential icons created by nawicon - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/urban" title="urban icons">Urban icons created by Freepik - Flaticon</a>*/}
+
+                <img src="/images/ico/house.png" alt="Residential" className='max-h-28' />
+                <h2>Residential</h2>
+              </div>
+
+              <div className='offer'>
+                <img src="/images/ico/skyline.png" alt="Commercial" className='max-h-28' />
+                <h2 className=''>Commercial</h2>
+              </div>
+            </div>
             <div ref={description} className='max-w-lg text-justify max-sm:w-11/12 max-md:w-full '>
                 <p className='my-2'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem sint soluta, laboriosam voluptatibus eligendi quaerat explicabo modi repellat animi pariatur sapiente quod doloremque, fugiat in ex? Amet eos, in dolor quisquam blanditiis incidunt veritatis reiciendis iusto doloribus consequuntur, unde, quaerat necessitatibus voluptatum! Dolor eos quas, quos quaerat illum neque sint.</p>
             </div>

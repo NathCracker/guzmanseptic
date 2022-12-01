@@ -2,37 +2,37 @@ export default[
     {
         url: '/images/cleaning.jpg',
         title: 'Cleaning and Pumping',
-        description: 'We offer the best septic cleaning service in all of houstom',
+        description: 'Septic cleaning and pumping, removal of debris that may block the tank.',
         link: '/services/cleaning' 
     },
     {
         url: '/images/installation.jpg',
         title: 'Installation',
-        description: 'We offer the best septic cleaning service in all of houstom',
+        description: 'Ground work, ventilation arrangements and septic tank installation.',
         link: '/services/installation' 
     },
     {
         url: '/images/image5.jpg',
-        title: 'Control Panel',
-        description: 'We offer the best septic cleaning service in all of houston',
+        title: 'Septic Control Panel',
+        description: 'Monitor your septic tank and prevent pump failure with a septic control panel',
         link: '/services/controlpanels'  
     },
     {
         url: '/images/image6.jpg',
         title: 'Grease Traps',
-        description: 'We offer the best grease traps services in all of houston texas',
+        description: 'Grease trap installation, unclogging and maintenance for your system.',
         link: '/services/greasetraps'  
     },
     {
         url: '/images/image5.jpg',
         title: 'High Pressure Jetting',
-        description: 'We offer the best septic cleaning service in all of houstom',
+        description: "Utilize a pressurized water stream to eliminate the process, dirt and pollution.",
         link: '/services/highpressurejetting'  
     },
     {
         url: '/images/image5.jpg',
         title: 'Septic Tank Repair',
-        description: 'We offer the best septic cleaning service in all of houstom',
+        description: 'Troubleshooting, Drain Field Malfunction Repairs, Septic Baffle Replacements.',
         link: '/services/pumping'  
     }
 ]   

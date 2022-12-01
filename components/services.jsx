@@ -14,16 +14,17 @@ const services = () => {
     cards.forEach(card => {
       gsap.fromTo(card, {y: 100, opacity:0}, {y:0, opacity: 1, duration: 0.5,
         scrollTrigger:{
-          trigger: card
+          trigger: card,
+          immediateRender: true
         }
         })
       });
 
       gsap.utils.toArray(".cards").forEach(cardss => {
-        let hover = gsap.to(cardss, {y: -20, duration:0.1, paused: true});
-        cardss.addEventListener("mouseenter", () => hover.play());
-        cardss.addEventListener("mouseleave", () => hover.reverse());
-      });
+       let hover = gsap.to(cardss, {y: -20, duration:0.1, paused: true});
+       cardss.addEventListener("mouseenter", () => hover.play());
+       cardss.addEventListener("mouseleave", () => hover.reverse());
+     });
 
     gsap.fromTo(el, {x: -50, opacity: 0}, {x: 0, opacity: 1, duration: 1, scrollTrigger:{
       trigger: el
