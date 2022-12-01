@@ -1,0 +1,14 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/api/hello": "pages/api/hello.js",
+  "/": "pages/index.html",
+  "/services/cleaning": "pages/services/cleaning.html",
+  "/services/controlpanels": "pages/services/controlpanels.html",
+  "/services/greasetraps": "pages/services/greasetraps.html",
+  "/services/highpressurejetting": "pages/services/highpressurejetting.html",
+  "/services/installation": "pages/services/installation.html",
+  "/services/pumping": "pages/services/pumping.html",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}
