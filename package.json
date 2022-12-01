@@ -1,6 +1,6 @@
 {
   "private": false,
-  "homepage": "https://nathcracker.github.io/guzman-septics",
+  "homepage": "https://github.com/NathCracker/guzmanseptic.github.io.git",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
